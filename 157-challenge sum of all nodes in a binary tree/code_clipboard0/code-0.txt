@@ -1,0 +1,9 @@
+func (t *Tree) SumAllBT() int {
+    return sumAllBT(t.root)
+}
+
+func sumAllBT(curr *Node) int {
+    //Implement your solution here
+
+    return curr.value //Kindly change the return value as per need
+}

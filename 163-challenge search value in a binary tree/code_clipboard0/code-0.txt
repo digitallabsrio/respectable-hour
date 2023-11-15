@@ -1,0 +1,9 @@
+func (t *Tree) SearchBT(value int) bool {
+    return searchBT(t.root, value)
+}
+
+func searchBT(root *Node, value int) bool {
+    //Implement your solution here
+
+    return false
+}

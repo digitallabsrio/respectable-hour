@@ -1,0 +1,16 @@
+func Permutation(data []int, i int, length int) { 
+  
+  // base condition DO NOT ALTER IT
+  if length == i {
+      temp := "{"
+      for k := 0 ; k <length ; k++{
+          temp += strconv.Itoa(data[k])
+          temp += " "
+      }
+      temp += "} "
+      fmt.Print(temp)
+    return
+   }
+    // Write your code here
+    
+}

@@ -1,0 +1,5 @@
+func SmallestPositiveMissingNumber(arr []int, size int) int { 
+    //Implement your solution here
+
+    return -1 //Return -1 if missing number not found
+}

@@ -1,0 +1,5 @@
+func longestContBalParen(str string, size int) int {
+    //Implement your solution here
+
+    return 0 //Return 0 if size of str is zero
+}

@@ -1,0 +1,10 @@
+func (t *Tree) IsCompleteTree2() bool {
+    count := t.NumNodes()
+    return isCompleteTreeUtil(t.root, 0, count)
+}
+
+func isCompleteTreeUtil(curr *Node, index int, count int) bool {
+    //Implement your solution here
+
+    return false
+}

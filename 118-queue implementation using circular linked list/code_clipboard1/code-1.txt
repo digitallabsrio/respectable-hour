@@ -1,0 +1,25 @@
+func (q *QueueLinkedList) Size() int { 
+ return q.size  // returns number of elements in the queue
+ 
+}
+
+func (q *QueueLinkedList) IsEmpty() bool { 
+ return q.size == 0 // returns true if the queue is empty
+}
+
+func (q *QueueLinkedList) Peek() int {
+    if q.IsEmpty() {
+        fmt.Println("QueueEmptyException")
+        return 0
+    }
+    return q.tail.next.value
+}
+
+func (q *QueueLinkedList) Print() {
+    temp := q.tail.next
+    for temp != nil {
+       fmt.Print(temp.value, " ")
+        temp = temp.next
+    }
+    fmt.Println()
+}

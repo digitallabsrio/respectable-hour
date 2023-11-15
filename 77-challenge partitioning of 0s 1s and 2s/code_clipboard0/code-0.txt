@@ -1,0 +1,5 @@
+func Partition012(arr []int, size int) {
+  //Implement your solution here
+
+  //Note: Update the same given array
+}

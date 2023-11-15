@@ -1,0 +1,10 @@
+func (t *Tree) TreeDepth() int {
+    return treeDepth(t.root)
+}
+
+func treeDepth(root *Node) int {
+
+    //Implement your solution here
+    
+    return root.value //Kindly change the return value as per needs
+}

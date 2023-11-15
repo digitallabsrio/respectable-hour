@@ -1,0 +1,10 @@
+type Node struct {
+    value int
+    next *Node
+    prev *Node
+}
+type Deque struct {
+    head *Node
+    tail *Node
+    size int
+}

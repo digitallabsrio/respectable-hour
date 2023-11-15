@@ -1,0 +1,10 @@
+func InfixToPostfix(expn string) string {
+
+  //kindly replace the output string with empty string while 
+  //implementing the solution
+  output := "No Output" 
+
+  //Implement your solution here
+
+  return output
+}

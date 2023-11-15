@@ -1,0 +1,4 @@
+func bottomInsert(stk *Stack, element int) {
+    //Implement your solution here
+    
+}

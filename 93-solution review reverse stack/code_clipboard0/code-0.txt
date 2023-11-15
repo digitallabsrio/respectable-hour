@@ -1,0 +1,34 @@
+package main
+import "fmt"
+
+func bottomInsert(stk *Stack, element int) {
+    var temp int
+    if (stk.Length() == 0) {
+        stk.Push(element)
+    } else {
+        temp = stk.Pop()
+        bottomInsert(stk, element)
+        stk.Push(temp)
+    }
+}
+
+func reverseStack(stk *Stack) {
+    if stk.IsEmpty() {
+    return
+    }
+    value := stk.Pop()
+    reverseStack(stk)
+    bottomInsert(stk, value)
+}
+// Testing code
+func main() {
+    stk := new(Stack)
+    stk.Push(1)
+    stk.Push(2)
+    stk.Push(3)
+    fmt.Print("Stack before reversal : ")
+    stk.Print()
+    reverseStack(stk)
+    fmt.Print("Stack after reversal : ")
+    stk.Print()
+}

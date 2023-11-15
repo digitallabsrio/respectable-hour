@@ -1,0 +1,9 @@
+func (t *Tree)TreeToListRec() *Node{
+    return treeToListRec(t.root)
+}
+
+func treeToListRec(curr *Node) *Node {
+    //Implement your solution here
+
+    return nil
+}

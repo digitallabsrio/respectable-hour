@@ -1,0 +1,10 @@
+func (q *QueueLinkedList) Remove() int {
+    if q.IsEmpty() {
+        fmt.Println("QueueEmptyException")
+        return 0
+    }
+    value := q.head.value
+    q.head = q.head.next
+    q.size--
+    return value
+}

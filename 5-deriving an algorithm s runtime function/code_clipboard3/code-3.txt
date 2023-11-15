@@ -1,0 +1,8 @@
+if true {
+  statement1;
+  statement2;
+  statement3;
+} else {
+  statement4;
+  statement5;
+}

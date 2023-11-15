@@ -1,0 +1,8 @@
+func (t *Tree) CeilBST(val int) int {
+    
+    ceil := math.MinInt32
+    
+    //Implement your solution here
+
+    return ceil
+}

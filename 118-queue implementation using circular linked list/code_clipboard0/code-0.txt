@@ -1,0 +1,10 @@
+type Node struct {
+    value int
+    next *Node
+}
+
+type QueueLinkedList struct {
+    head *Node
+    tail *Node
+    size int
+}

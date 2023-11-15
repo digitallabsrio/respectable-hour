@@ -1,0 +1,3 @@
+func reverseStack(stk *Stack) {
+//Implement your solution here
+}

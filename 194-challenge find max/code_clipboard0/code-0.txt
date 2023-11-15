@@ -1,0 +1,7 @@
+func (t *Tree) FindMaxNode() *Node {
+    var node *Node = t.root
+
+    //Implement your solution here
+
+    return node
+}

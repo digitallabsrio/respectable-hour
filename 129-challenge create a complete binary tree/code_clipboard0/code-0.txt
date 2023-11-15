@@ -1,0 +1,12 @@
+func LevelOrderBinaryTree(arr []int) *Tree {
+    tree := new(Tree)
+    tree.root = levelOrderBinaryTree(arr, 0, len(arr))
+    return tree
+}
+
+func levelOrderBinaryTree(arr []int, start int, size int) *Node {
+    
+    //Implement your solution here
+
+    return nil
+}

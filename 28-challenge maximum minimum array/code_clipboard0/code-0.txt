@@ -1,0 +1,5 @@
+func MaxMinArr(arr []int, size int) { 
+  //Implement your solution here
+
+  //Note: Please update the same given array
+}

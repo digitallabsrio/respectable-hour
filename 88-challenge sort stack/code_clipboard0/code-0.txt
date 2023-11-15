@@ -1,0 +1,4 @@
+func sortStack(stk *Stack) {
+    //Implement your solution here
+
+}

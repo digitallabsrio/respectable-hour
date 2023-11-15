@@ -1,0 +1,5 @@
+func SequentialSearch(data []int, value int) bool { 
+    //Implement your solution here
+
+    return false     //Return false if value not found
+}

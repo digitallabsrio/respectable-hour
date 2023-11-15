@@ -1,0 +1,14 @@
+type Node struct {
+    value int
+    next *Node
+}
+type StackLinkedList struct {
+    head *Node
+    size int
+}
+func (s *StackLinkedList) Size() int {}
+func (s *StackLinkedList) IsEmpty() bool {}
+func (s *StackLinkedList) Peek() (int, bool) {}
+func (s *StackLinkedList) Push(value int) {}
+func (s *StackLinkedList) Pop() (int, bool) {}
+func (s *StackLinkedList) Print() {}

@@ -1,0 +1,5 @@
+
+func maxPathSum(arr1 []int, size1 int, arr2 []int, size2 int) int { 
+
+    return -1
+}

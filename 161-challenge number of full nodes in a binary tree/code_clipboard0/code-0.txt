@@ -1,0 +1,14 @@
+func (t *Tree) NumFullNodesBT() int {
+    return numFullNodesBT(t.root)
+}
+
+func numFullNodesBT(curr *Node) int {
+    
+    //Implement your solution here
+
+    var count int
+
+    //Implement your solution here
+
+    return count
+}

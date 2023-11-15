@@ -1,0 +1,4 @@
+
+i := 0 //statement1
+j := i + 1 //statement2
+k := i + j //statement3

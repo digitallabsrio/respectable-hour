@@ -1,0 +1,12 @@
+func (t *Tree) PrintDataInRange(min int, max int) {
+    printDataInRange(t.root, min, max)
+}
+
+func printDataInRange(root *Node, min int, max int) {
+    
+    //Implement your solution here
+
+    fmt.Print(root.value," ")
+
+    //Implement your solution here
+}

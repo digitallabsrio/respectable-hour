@@ -1,0 +1,13 @@
+
+func (q *QueueLinkedList) Remove() (int, bool) {
+    if q.IsEmpty() {
+        fmt.Println("QueueEmptyException")
+        return 0, false
+    }
+    var value int
+    deleteMe := q.tail.next
+    q.tail.next = q.deleteMe.next
+    q.size--
+    value = deleteMe.value
+    return value, true
+}

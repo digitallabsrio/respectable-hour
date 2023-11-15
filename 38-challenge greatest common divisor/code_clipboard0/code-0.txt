@@ -1,0 +1,5 @@
+func GCD(m int, n int) int { 
+    //Implement your solution here 
+
+    return -1
+}

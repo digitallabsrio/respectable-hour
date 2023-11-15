@@ -1,0 +1,8 @@
+func (t *Tree) PrintSpiralTree() {
+    //Implement your solution here
+
+    //Kindly change this line of code as per your needs
+    fmt.Print("Sample Output")
+
+    //Implement your solution here
+}

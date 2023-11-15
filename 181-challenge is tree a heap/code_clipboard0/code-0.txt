@@ -1,0 +1,10 @@
+func (t *Tree) IsHeap() bool {
+    parentValue := -99999999
+    return t.IsCompleteTree() && isHeapUtil(t.root, parentValue)
+}
+
+func isHeapUtil(curr *Node, parentValue int) bool {
+    //Implement your solution here
+
+    return false
+}

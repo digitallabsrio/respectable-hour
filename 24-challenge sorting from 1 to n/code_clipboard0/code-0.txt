@@ -1,0 +1,5 @@
+func Sort1toN(arr []int, size int) {
+  
+  //Implement your solution here
+
+}

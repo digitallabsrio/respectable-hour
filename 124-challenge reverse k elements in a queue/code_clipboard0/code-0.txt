@@ -1,0 +1,4 @@
+func reverseKElementInQueue(que *Queue, k int) {
+    //Implement your solution here
+
+}

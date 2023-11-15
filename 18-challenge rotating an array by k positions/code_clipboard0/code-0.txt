@@ -1,0 +1,5 @@
+func RotateArray(data []int, k int) {
+    //Implement your solution here
+
+    //You must make changes in the given array
+}

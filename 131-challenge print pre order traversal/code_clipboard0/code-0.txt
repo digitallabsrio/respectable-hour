@@ -1,0 +1,13 @@
+func (t *Tree) PrintPreOrder() {
+    printPreOrder(t.root)
+}
+
+func printPreOrder(n *Node) {
+
+    //Implement your solution here
+
+    fmt.Print(n.value, " ")
+
+    //Implement your solution here
+    
+}

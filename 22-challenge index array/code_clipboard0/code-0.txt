@@ -1,0 +1,5 @@
+func indexArray(arr []int, size int) {
+    //Implement your solution here
+
+    //Note: Please make changes in the given array
+}

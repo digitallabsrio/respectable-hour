@@ -1,0 +1,18 @@
+package main
+
+import(
+  "fmt"
+)
+
+func fun7(n int) int {
+ m := 0
+ for i := n; i > 0; i /= 2 {
+  for j := 0; j < i; j++ {
+    m += 1
+  }
+ }
+ return m
+}
+func main() {
+ fmt.Println("N = 100, Number of instructions O(n) ::", fun7(100))
+}

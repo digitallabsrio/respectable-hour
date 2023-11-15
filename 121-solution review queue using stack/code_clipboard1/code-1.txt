@@ -1,0 +1,7 @@
+func (que *QueueUsingStack) Length() int {
+     return (que.stk1.Length() + que.stk2.Length());
+}
+
+func (que *QueueUsingStack) IsEmpty() bool {
+     return (que.stk1.Length() + que.stk2.Length()) == 0;
+}

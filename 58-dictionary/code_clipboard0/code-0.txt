@@ -1,0 +1,34 @@
+package main
+import("fmt")
+
+func main() {
+    m := make(map[string]int)
+
+    //setting map array where fruit are keys and integers are values.
+    m["Apple"] = 40
+    m["Banana"] = 30
+    m["Mango"] = 50
+    for key, val := range m {
+      fmt.Print("[ ",key," -> ", val," ]") 
+    }
+    fmt.Println()
+    
+    // checking Apple is available in map or not
+    v, ok := m["Apple"]
+    if ok {
+        fmt.Println("Apple available at price :", v) 
+    } else {
+        fmt.Println("Apple unavailable.")
+    }
+
+    //deleting apple key from map
+    delete(m, "Apple")
+    v, ok = m["Apple"]
+
+    //again checking apple is available or not
+    if ok {
+        fmt.Println("Apple available at price :", v)
+    } else {
+        fmt.Println("Apple unavailable.")
+    } 
+}

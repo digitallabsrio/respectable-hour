@@ -1,0 +1,11 @@
+func (t *Tree) CopyMirrorTree() *Tree {
+    tree := new(Tree)
+    tree.root = copyMirrorTree(t.root)
+    return tree
+}
+
+func copyMirrorTree(curr *Node) *Node {
+    //Implement your solution here
+
+    return nil //Kindly change the return value as per needs
+}

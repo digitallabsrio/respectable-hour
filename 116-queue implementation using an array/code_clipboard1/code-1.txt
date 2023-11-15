@@ -1,0 +1,7 @@
+func (q *Queue) IsEmpty() bool {
+  return q.size == 0
+}
+
+func (q *Queue) Length() int {
+  return q.size
+}

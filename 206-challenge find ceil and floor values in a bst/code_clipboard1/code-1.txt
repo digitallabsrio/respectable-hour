@@ -1,0 +1,8 @@
+func (t *Tree) FloorBST(val int) int {
+
+    floor := math.MaxInt32
+
+    //Implement your solution here
+    
+    return floor
+}

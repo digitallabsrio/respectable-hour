@@ -1,0 +1,35 @@
+
+func (q *Deque) RemoveFront() int {
+    if q.IsEmpty() {
+        fmt.Println("QueueEmptyException")
+        return 0
+    }
+    q.size--
+    value := q.head.value
+    q.head = q.head.next
+
+    if q.head != nil {
+        q.head.prev = nil
+    } else {
+        q.tail = nil
+    }
+
+    return value
+}
+
+func (q *Deque) RemoveBack() int {
+    if q.IsEmpty() {
+        fmt.Println("QueueEmptyException")
+        return 0
+    }
+    q.size--
+    value := q.tail.value
+    q.tail = q.tail.prev
+
+    if q.tail != nil {
+        q.tail.next = nil
+    } else {
+        q.head = nil
+    }
+    return value
+}

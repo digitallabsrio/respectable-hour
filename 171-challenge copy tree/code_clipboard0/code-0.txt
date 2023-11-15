@@ -1,0 +1,12 @@
+func (t *Tree) CopyTree() *Tree {
+    Tree2 := new(Tree)
+    Tree2.root = copyTree(t.root)
+    return Tree2
+}
+
+func copyTree(curr *Node) *Node {
+    
+    //Implement your solution here
+
+    return nil 
+}

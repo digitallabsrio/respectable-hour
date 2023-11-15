@@ -1,0 +1,4 @@
+func (que *QueueUsingStack) Add(value int) {}
+func (que *QueueUsingStack) Remove() int {}
+func (que *QueueUsingStack) Length() int {}
+func (que *QueueUsingStack) IsEmpty() bool {}

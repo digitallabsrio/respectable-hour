@@ -1,0 +1,6 @@
+count:=0
+n:=10000
+for i := n; i >= 1; i = i/2 {
+	count++
+}
+fmt.Println(count)

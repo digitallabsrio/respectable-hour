@@ -1,0 +1,8 @@
+const capacity = 100
+
+type Queue struct {
+  size int
+  data [capacity]interface{}
+  front int
+  back int
+}

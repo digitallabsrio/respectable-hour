@@ -1,0 +1,5 @@
+func printInt(number int) {
+    // Write recursive code here
+    fmt.Print("-1") 
+    // Do not remove the print statement although you can change it with your initialized variables.
+}

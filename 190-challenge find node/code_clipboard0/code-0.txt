@@ -1,0 +1,5 @@
+func (t *Tree) Find(value int) bool {
+    //Implement your solution here
+
+    return false
+}

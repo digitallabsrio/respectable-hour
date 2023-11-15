@@ -1,0 +1,13 @@
+func (t *Tree) PrintPostOrder() {
+    printPostOrder(t.root)
+}
+
+func printPostOrder(n *Node) {
+
+    //Implement your solution here
+
+    fmt.Print(n.value, " ")
+
+    //Implement your solution here
+
+}

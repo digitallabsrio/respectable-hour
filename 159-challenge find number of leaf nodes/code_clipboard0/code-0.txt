@@ -1,0 +1,9 @@
+func (t *Tree) NumLeafNodes() int {
+    return numLeafNodes(t.root)
+}
+
+func numLeafNodes(curr *Node) int {
+    //Implement your solution here
+
+    return curr.value //Kindly change the return value as per needs
+}

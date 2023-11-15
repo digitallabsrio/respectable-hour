@@ -1,0 +1,10 @@
+func Partition01(arr []int, size int) int {
+  //Write your code here
+
+  //Note: Update the same given array
+  count := -1 //Change the count variable as per needs
+  
+  //Write your code here
+
+  return count
+}

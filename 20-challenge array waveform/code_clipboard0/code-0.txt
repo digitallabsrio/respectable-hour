@@ -1,0 +1,5 @@
+func WaveArray(arr []int) { 
+    //Implement your solution here
+
+    //Update the same array
+}

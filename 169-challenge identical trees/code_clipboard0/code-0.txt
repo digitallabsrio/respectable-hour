@@ -1,0 +1,9 @@
+func (t *Tree) IsEqual(t2 *Tree) bool {
+    return isEqual(t.root, t2.root)
+}
+
+func isEqual(node1 *Node, node2 *Node) bool {
+    //Implement your solution here
+
+    return false
+}

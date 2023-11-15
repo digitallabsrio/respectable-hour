@@ -1,0 +1,5 @@
+func IsBalancedParenthesis(expn string) bool {
+    //Implement your solution here
+
+    return true //Return true if parentheses are balanced
+}

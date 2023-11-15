@@ -1,0 +1,22 @@
+package main
+
+import("fmt")
+
+ func indexArray2(arr []int, size int) { 
+     temp := 0
+     for i := 0; i < size; i++ {
+        for arr[i] != -1 && arr[i] != i {
+        /* swap arr[i] and arr[arr[i]] */
+            temp = arr[i]
+            arr[i] = arr[temp]
+            arr[temp] = temp
+        } 
+    }
+}
+
+func main() {
+    arr := []int{8, -1, 6, 1, 9, 3, 2, 7, 4, -1}
+    size := len(arr)
+    indexArray2(arr, size)
+    fmt.Println(arr)
+}

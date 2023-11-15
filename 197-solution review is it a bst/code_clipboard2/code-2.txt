@@ -1,0 +1,32 @@
+package main
+import "fmt"
+
+func (t *Tree) IsBST() bool {
+    var c int
+    return isBST(t.root, &c)
+}
+func isBST(root *Node, count *int) bool {
+    var ret bool
+    if root != nil {
+        ret = isBST(root.left, count)
+        if !ret {
+            return false
+        }
+        if *count > root.value {
+            return false
+        }
+        *count = root.value
+        ret = isBST(root.right, count)
+        if !ret {
+            return false
+        }
+    }
+    return true
+}
+
+/* Testing Code */
+func main() {
+    arr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    t := CreateBinarySearchTree(arr)
+    fmt.Println(t.IsBST());
+}

@@ -1,0 +1,3 @@
+func sortedInsert(stk *Stack, element int) {
+//Implement your solution here
+}

@@ -1,0 +1,11 @@
+func printParenthesisNumber(expn string, size int) {
+  //Uncomment the ch variable and use it iterate through the string
+  //var ch byte 
+  output := "" //use output variable to save and print the output string
+
+
+  //Implement your solution here
+
+
+	fmt.Println(output)
+}

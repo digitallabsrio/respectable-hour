@@ -1,0 +1,18 @@
+package main
+
+import(
+  "fmt"
+)
+
+func fun4(n int) int {
+  m := 0
+  i := 1
+  for i < n {
+    m += 1
+    i = i * 2
+  }
+ return m
+}
+func main() {
+ fmt.Println("N = 100, Number of instructions O(log(n)) ::", fun4(100))
+}

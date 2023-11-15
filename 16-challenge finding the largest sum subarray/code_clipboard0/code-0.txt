@@ -1,0 +1,6 @@
+func MaxSubArraySum(data []int) int {
+    
+    //Implement your solution here
+
+    return 0
+}

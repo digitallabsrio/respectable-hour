@@ -1,0 +1,31 @@
+package main
+
+func sortedInsert(stk *Stack, element int) {
+    var temp int
+    if (stk.Length() == 0 || element > stk.Top()) {
+        stk.Push(element)
+    } else {
+        temp = stk.Pop()
+        sortedInsert(stk, element)
+        stk.Push(temp)
+    }
+}
+
+func sortStack(stk *Stack) {
+    var temp int
+    if (stk.Length() > 0) {
+        temp = stk.Pop()
+        sortStack(stk)
+        sortedInsert(stk, temp)
+    }
+}
+// Testing code
+func main() {
+    stk := new(Stack)
+    stk.Push(1)
+    stk.Push(4)
+    stk.Push(3)
+    stk.Push(2)
+    sortStack(stk)
+    stk.Print()
+}

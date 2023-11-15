@@ -1,0 +1,28 @@
+package main
+
+import ("fmt")
+
+func swap(x, y int) (int, int) {
+    return y, x
+}
+
+func MaxMinArr2(arr []int, size int) { 
+  for i := 0; i < (size - 1); i++ {
+        ReverseArr(arr, i, size-1)
+    }
+}
+
+func ReverseArr(arr []int, start int, stop int) { 
+  for start < stop {
+        arr[start],arr[stop]=swap(arr[start], arr[stop])
+        start += 1
+        stop -= 1 
+  } 
+}
+/* Testing code */
+func main() {
+  arr := []int{1, 2, 3, 4, 5, 6, 7} 
+  size := len(arr)
+  MaxMinArr2(arr, size) 
+  fmt.Println(arr)
+}

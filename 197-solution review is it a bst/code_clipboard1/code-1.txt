@@ -1,0 +1,24 @@
+package main
+import "fmt"
+import "math"
+
+func (t *Tree) IsBST() bool {
+    return IsBST(t.root, math.MinInt32, math.MaxInt32)
+}
+func IsBST(curr *Node, min int, max int) bool {
+    if curr == nil {
+    return true
+    }
+    if curr.value < min || curr.value > max {
+    return false
+    }
+    return IsBST(curr.left, min, curr.value) && IsBST(curr.right,
+    curr.value, max)
+}
+
+/* Testing Code */
+func main() {
+    arr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    t := CreateBinarySearchTree(arr)
+    fmt.Println(t.IsBST());
+}

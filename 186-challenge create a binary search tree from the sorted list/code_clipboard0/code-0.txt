@@ -1,0 +1,15 @@
+func CreateBinarySearchTree(arr []int) *Tree {
+    t := new(Tree)
+    size := len(arr)
+    t.root = createBinarySearchTreeUtil(arr, 0, size-1)
+    return t
+}
+
+func createBinarySearchTreeUtil(arr []int, start int, end int) *Node {
+    
+    curr := new(Node)
+
+    //Implement your solution here
+
+    return curr
+}

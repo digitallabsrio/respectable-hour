@@ -1,0 +1,5 @@
+func ArrayIndexMaxDiff(arr []int, size int) int { 
+  //Implement your solution here
+
+  return -1
+}

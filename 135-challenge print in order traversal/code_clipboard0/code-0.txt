@@ -1,0 +1,13 @@
+func (t *Tree) PrintInOrder() {
+    printInOrder(t.root)
+}
+
+
+func printInOrder(n *Node) {
+    
+    //Implement your solution here
+
+    fmt.Print(n.value, " ")
+
+    //Implement your solution here
+}

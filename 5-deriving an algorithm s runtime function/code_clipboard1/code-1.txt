@@ -1,0 +1,9 @@
+a := 1
+b := 2
+c := 3
+
+for i := 0; i < 10; i++ {
+  a = a + b  //statement1
+  b = i + a //statement2
+  c = c + b //statement3
+}

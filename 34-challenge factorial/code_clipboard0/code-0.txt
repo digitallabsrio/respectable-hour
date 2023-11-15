@@ -1,0 +1,5 @@
+func Factorial(i int) int {
+    // Implement your solution here
+
+    return i 
+}

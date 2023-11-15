@@ -1,0 +1,27 @@
+package main
+
+import ("fmt")
+
+//setting set as map
+type Set map[interface{}]bool
+// Add value in set
+func (s *Set) Add(key interface{}) { 
+  (*s)[key] = true
+}
+// Remove value from set
+func (s *Set) Remove(key interface{}) { 
+  delete((*s), key)
+}
+//Find is key available in set or not
+func (s *Set) Find(key interface{}) bool { 
+  return (*s)[key]
+}
+func main() {
+    mp := make(Set)
+    mp.Add(1)
+    mp.Add(2)
+    fmt.Println(mp.Find(1))
+    fmt.Println(mp.Find(3))
+    mp.Remove(1)
+    fmt.Println(mp.Find(1))
+}

@@ -1,0 +1,13 @@
+import "math"
+
+func (t *Tree) FindMaxBT() int {
+    return findMaxBT(t.root)
+}
+
+func findMaxBT(curr *Node) int {
+    //Implement your solution here
+
+    return math.MinInt32 
+
+    //Implement your solution here
+}

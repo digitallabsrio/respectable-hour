@@ -1,0 +1,29 @@
+package main
+import "fmt"
+
+func (t *Tree) IsHeap2() bool {
+    count := t.NumNodes()
+    parentValue := -99999999
+    return isHeapUtil2(t.root, 0, count, parentValue)
+}
+
+func isHeapUtil2(curr *Node, index int, count int, parentValue int) bool {
+    if (curr == nil){
+        return true
+    }
+    if (index > count){
+        return false
+    }
+    if (curr.value < parentValue){
+        return false
+    }
+    return isHeapUtil2(curr.left, index * 2 + 1, count, curr.value) &&
+    isHeapUtil2(curr.right, index * 2 + 2, count, curr.value)
+}
+
+/* Testing Code */
+func main() {
+    arr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    t := LevelOrderBinaryTree(arr)
+    fmt.Println(t.IsHeap2());
+}

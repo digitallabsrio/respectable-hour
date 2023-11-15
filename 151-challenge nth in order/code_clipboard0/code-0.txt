@@ -1,0 +1,12 @@
+func (t *Tree) NthInOrder(index int) {
+    var counter int
+    nthInOrder(t.root, index, &counter)
+}
+
+func nthInOrder(node *Node, index int, counter *int) {
+    //Implement your solution here
+
+    fmt.Print(node.value)
+
+    //Implement your solution here
+}

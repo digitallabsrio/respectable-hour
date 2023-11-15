@@ -1,0 +1,13 @@
+func (q *QueueLinkedList) Add(value int) {
+    temp := &Node{value, nil}
+    if q.tail == nil {
+        q.tail = temp
+        temp.next = q.tail
+    } else 
+    {
+        temp.next = q.tail.next
+        q.tail.next = temp
+        q.tail = temp
+    }
+    q.size++
+}

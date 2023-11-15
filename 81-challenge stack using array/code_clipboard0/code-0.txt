@@ -1,0 +1,6 @@
+func (s *StackInt) IsEmpty() bool {}
+func (s *StackInt) Length() int {}
+func (s *StackInt) Print() {}
+func (s *StackInt) Push(value int) {} 
+func (s *StackInt) Pop() int {}
+func (s *StackInt) Top() int {}

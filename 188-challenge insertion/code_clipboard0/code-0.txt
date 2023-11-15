@@ -1,0 +1,9 @@
+func (t *Tree) Add(value int) {
+    t.root = addNode(t.root, value)
+}
+
+func addNode(n *Node, value int) *Node {
+    //Implement your solution here
+    
+    return n 
+}

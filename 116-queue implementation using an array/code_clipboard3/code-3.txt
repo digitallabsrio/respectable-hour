@@ -1,0 +1,10 @@
+func (q *Queue) Dequeue() interface{} {
+  var value interface{}
+  if q.size <= 0 {
+    return 0
+  }
+  q.size--
+  value = q.data[q.front]
+  q.front = (q.front + 1) % (capacity - 1)
+  return value
+}

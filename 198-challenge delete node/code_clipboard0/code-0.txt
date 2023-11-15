@@ -1,0 +1,8 @@
+func (t *Tree) DeleteNode(value int) {
+    t.root = DeleteNode(t.root, value)
+}
+
+func DeleteNode(node *Node, value int) *Node {
+    //Implement your solution here
+    return node
+}

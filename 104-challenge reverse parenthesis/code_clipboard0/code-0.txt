@@ -1,0 +1,12 @@
+import "math" //You can "math" library to solve the problem
+
+func reverseParenthesis(expn string, size int) int {
+  
+  //Implement your solution here
+
+  //Uncomment this line of code and use ch to iterate in a string
+  //var ch rune
+
+  return 0 //Return 0 if string is empty
+  //Return -1 if string's length is odd
+}

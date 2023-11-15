@@ -1,0 +1,6 @@
+func isBSTArray( preorder[] int, size int) bool {
+    
+    //Implement your solution here
+
+    return false
+}

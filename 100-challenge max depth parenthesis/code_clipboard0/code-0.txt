@@ -1,0 +1,8 @@
+func maxDepthParenthesis(expn string, size int) int {
+  //Implement your solution here
+  
+  //Uncomment the ch variable and use it to move in an expression array
+  //var ch byte 
+
+  return 0 //Return 0 if depth of parenthesis is zero
+}

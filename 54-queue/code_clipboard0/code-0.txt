@@ -1,0 +1,11 @@
+func main() {
+    q := Queue{nil,nil,0}
+    q.Enqueue(1)
+    q.Enqueue(2)
+    q.Enqueue(3)
+    for q.Len() != 0 {
+        val := q.Dequeue().(int)
+        fmt.Print(val, " ")
+    }
+    fmt.Println()
+}

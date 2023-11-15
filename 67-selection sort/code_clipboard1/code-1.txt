@@ -1,0 +1,24 @@
+package main
+import ("fmt")
+
+func SelectionSort2(arr []int) {
+    size := len(arr)
+    var i, j, min int
+    for i = 0; i < size-1; i++ {
+        min = i
+        for j = i + 1; j < size; j++ {
+            if arr[j] < arr[min] {
+                min = j 
+            }
+        }
+        arr[i], arr[min] = arr[min], arr[i] 
+      }
+      
+}
+
+//Testing Code
+func main() {
+  data := []int{9, 1, 8, 2, 7, 3, 6, 4, 5}
+  SelectionSort2(data)
+  fmt.Println(data)
+}
